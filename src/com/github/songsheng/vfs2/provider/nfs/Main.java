@@ -1,23 +1,5 @@
-# common-vfs2-nfs
-nfs provider for java common vfs2
+package com.github.songsheng.vfs2.provider.nfs;
 
-[![License](http://img.shields.io/badge/License-MIT-blue.svg?style=flat)](http://opensource.org/licenses/mit)
-
-
-Project "common-vfs2-nfs" is a NFS provider for [Commons VFS](http://commons.apache.org/proper/commons-vfs/).
-
-
-## Requirements
-
-Project "commons-vfs2-cifs" requires:
-* [yanfs library](https://github.com/raisercostin/yanfs)
-* Java 6
-
-
-
-## Example
-
-```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -56,24 +38,3 @@ public class Main {
 	}
 
 }
-```
-
-
-
-## License
-
-```
-Copyright 2016 Song Sheng
-
-Licensed under the MIT License,(the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    https://opensource.org/licenses/MIT
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```

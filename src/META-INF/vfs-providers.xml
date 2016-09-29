@@ -1,0 +1,8 @@
+<providers>
+
+	<provider class-name="com.github.songsheng.vfs2.provider.nfs.NfsFileProvider">
+		<scheme name="nfs" />
+		<if-available class-name="com.sun.xfile.XFile" />
+	</provider>
+
+</providers>
