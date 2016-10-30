@@ -9,7 +9,7 @@ Project "common-vfs2-nfs" is a NFS provider for [Commons VFS](http://commons.apa
 
 ## Requirements
 
-Project "commons-vfs2-cifs" requires:
+Project "commons-vfs2-nfs" requires:
 * [yanfs library](https://github.com/raisercostin/yanfs)
 * Java 6
 
