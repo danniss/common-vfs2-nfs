@@ -30,12 +30,11 @@ import org.apache.commons.vfs2.VFS;
 public class Main {
 
 	public static void main(String[] args) {
-		try {
-			FileSystemManager fileSystemManager = VFS.getManager();
-			
-			FileObject fileObject;
-			String path = "";
-	        fileObject = fileSystemManager.resolveFile("nfs://10.0.202.122//opt/glog/a.txt");
+	    try {
+		FileSystemManager fileSystemManager = VFS.getManager();
+
+		String path = "nfs://10.0.202.122//opt/glog/a.txt";
+	        FileObject fileObject = fileSystemManager.resolveFile();
 	        if (fileObject == null) {
 	            throw new IOException("File cannot be resolved: " + path);
 	        }
@@ -48,10 +47,9 @@ public class Main {
         	while((line = stream.readLine()) != null) {
         		System.out.println(line);
         	}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	    } catch (Exception e) {
+		e.printStackTrace();
+	    }
 
 	}
 
