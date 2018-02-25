@@ -14,6 +14,10 @@ Project "commons-vfs2-nfs" requires:
 * Java 6
 
 
+## Building
+
+    mvn clean package dependency:tree
+
 
 ## Example
 
